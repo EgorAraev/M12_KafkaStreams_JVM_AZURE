@@ -1,2 +1,22 @@
-.idea
-/target/*
+*.class
+*.log
+
+# idea
+/.idea
+/target
+*.iml
+
+.venv/
+venv/
+venv_p/
+dist/
+*.egg-info/
+build/
+### Mac ###
+.DS_Store
+
+# terraform
+/terraform/.terraform
+/terraform/terraform.plan
+/terraform/.terraform.lock.hcl
+

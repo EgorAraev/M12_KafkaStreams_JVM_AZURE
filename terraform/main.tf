@@ -4,7 +4,7 @@ terraform {
   resource_group_name  = "araev201"
   storage_account_name = "araev201"
   container_name = "araev201"
-  key = "terraformnew.tfstate"
+  key = "m12new.tfstate"
   }
 }
 
@@ -68,7 +68,7 @@ resource "azurerm_kubernetes_cluster" "bdcc" {
   default_node_pool {
     name       = "default"
     node_count = 1
-    vm_size    = "Standard_D3_v2"
+    vm_size    = "Standard_D4_v2"
   }
 
   identity {

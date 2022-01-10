@@ -127,3 +127,27 @@ az aks update -n <aks_resource_name> -g <aks_resource_group_name> --attach-acr <
 
 ![image](screenshots/7-check-messages.png)
 
+### Build jar with streaming app
+
+![image](screenshots/8-build-jar.png)
+
+### Build and push docker container
+
+![image](screenshots/9-build-image.png)
+
+### Run `kubectl apply -f ./kstream-app.yaml`. See that there appeared a new consumer
+
+![image](screenshots/10-consumer.png)
+
+### Check that `expedia_ext` topic is being populated with enriched data
+
+![image](screenshots/11-check-messages-ext.png)
+
+### Connect to ksqldb pod and create a stream and a table to query hotel counts
+
+![image](screenshots/12-ksql-create.png)
+
+### Query the resulting table
+
+![image](screenshots/13-results.png)
+
